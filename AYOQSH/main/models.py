@@ -10,7 +10,7 @@ class ArticlesConfig(AppConfig):
 
 class City(models.Model):
     city_name = models.CharField("City_name", max_length=50)
-    servise_name = models.CharField("Servise_name", max_length=50)
+    url = models.CharField("Servise_name", max_length=50)
     fuel1 = models.CharField('ai_80', max_length=50, default='')
     fuel2 = models.CharField('ai_90', max_length=50, default='')
     fuel3 = models.CharField('ai_91', max_length=50, default='')
