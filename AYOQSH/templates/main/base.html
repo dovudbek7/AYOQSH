@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/bbb.css' %}"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>{% block tittle %}{% endblock %}</title>
 </head>
@@ -21,9 +23,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'main:home' %}">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'main:register' %}">Register</a>
               </li>
@@ -32,8 +32,8 @@
                   Categories
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'main:contact' %}">Contact</a></li>
-                  <li><a class="dropdown-item" href="{% url 'main:about' %}">About Us</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                  <li><a class="dropdown-item" href="#about">About Us</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -51,16 +51,122 @@
       {% block content %}
       {% endblock %}
 
-      <footer class="footer bg-secondary">
-        <center class="">
-            <a href="#" class="text-decoration-none fw-bold text-light">AYOQSH</a>
-            <p class="menu">
-                <a href="#" class="text-decoration-none">About</a>
-                <a href="#" class="text-decoration-none">Servisec</a>
-                <a href="#" class="text-decoration-none">Contact</a>
-            </p>
-        </center>
-      </footer>
+    
+
+
+
+
+
+
+
+        
+        <footer class="footer-08">
+          <div class="container-fluid px-lg-5">
+            <div class="row">
+              <div class="col-md-9 py-5">
+                <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="footer-heading" id="about">About us</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <ul class="ftco-footer-social p-0">
+                      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa-brands fa-facebook"></i></a></li>
+                      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="row justify-content-center">
+                      <div class="col-md-12 col-lg-9">
+                        <div class="row">
+                          <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading">Discover</h2>
+                            <ul class="list-unstyled">
+                              <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                              <li><a href="#" class="py-1 d-block">Merchant</a></li>
+                              <li><a href="#" class="py-1 d-block">Giving back</a></li>
+                              <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading">About</h2>
+                            <ul class="list-unstyled">
+                              <li><a href="#" class="py-1 d-block">Staff</a></li>
+                              <li><a href="#" class="py-1 d-block">Team</a></li>
+                              <li><a href="#" class="py-1 d-block">Careers</a></li>
+                              <li><a href="#" class="py-1 d-block">Blog</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading">Resources</h2>
+                            <ul class="list-unstyled">
+                              <li><a href="#" class="py-1 d-block">Security</a></li>
+                              <li><a href="#" class="py-1 d-block">Global</a></li>
+                              <li><a href="#" class="py-1 d-block">Charts</a></li>
+                              <li><a href="#" class="py-1 d-block">Privacy</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-md-5">
+                  <div class="col-md-12">
+                Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+                <h2 class="footer-heading footer-heading-white" id="contact">Contact us</h2>
+                <form action="#" class="contact-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone number">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="form-control submit px-3">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+      
+    <div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
       <script src="{% static 'js.js' %}"></script>

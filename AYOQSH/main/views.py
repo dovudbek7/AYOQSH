@@ -9,8 +9,6 @@ def register(request):
     return render(request, 'main/register.html')
 
 
-def contact(request):
-    return render(request, 'main/contact.html')
 
 
 def about(request):
