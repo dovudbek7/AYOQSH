@@ -1,11 +1,11 @@
 from django.shortcuts import render
-
-# Create your views here.
+from django.views.generic.base import View
+from .models import Fuel
 from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    return render(request, 'main/index.html',)
 
 
 def register(request):
@@ -14,5 +14,4 @@ def register(request):
 
 
 
-def about(request):
-    return render(request, 'main/about.html')
+
