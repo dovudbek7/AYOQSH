@@ -7,5 +7,5 @@ app_name = 'main'
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
     path('register/', views.register, name='register'),
-    path("<slug:slug>/", views.FuelView.as_view(), name="filter")
+    path("<slug:slug>/", views.FuelView.as_view(), name="detail")
 ]

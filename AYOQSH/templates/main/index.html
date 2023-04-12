@@ -11,25 +11,25 @@ AYOQSH
     <div class="container">
 
         <div class="d-lg-flex d-block">
-
-           {% for f in fuel_list %}
-           <div class="card m-2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-            <div class="  rounded d-flex ">
-                <img class="  h-100  rounded ms-2 mt-2" style="width: 40%;"  src="{% static 'img/ayoqsh.png' %}" alt="">
-                <div class="">
-                    <p class="ms-5 mt-2 fw-bold fs-4   font-monospace ">{{ f.company_name }}</p>
-                    <p class="ms-4  fw-medium ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, tenetur.</p>
+            
+            {% for f in fuel_list %}
+            <div class="card m-2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="  rounded d-flex ">
+                    <img class="  h-100  rounded ms-2 mt-2" style="width: 40%;"  src="{% static 'img/ayoqsh.png' %}" alt="">
+                    <div class="">
+                        <p class="ms-5 mt-2 fw-bold fs-4   font-monospace ">{{ f.company_name }}</p>
+                        <p class="ms-4  fw-medium ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, tenetur.</p>
+                    </div>
                 </div>
-            </div>
                 
             <center class=" mb-4">
-                <button class="btn btn-warning  mt-4 w-25"><a href="{{ f.get_absolute_url }}">Read more</a></button>
+                <button class="btn btn-warning  mt-4 w-25"><a href="{{ f.slug }}">Read more</a></button>
             </center>
-            </div>
-            {% endfor %}
-
-                          
-                
+        </div>
+        {% endfor %}
+            
+            
+            
         </div>
        
 
