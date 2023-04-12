@@ -22,12 +22,12 @@ AYOQSH
                 </div>
             </div>
                 
-            <center class=" mb-4 ">
-                <button class="btn btn-warning  mt-4 w-25"><a href="{% url 'main:detail' f.slug %}">Read more</a></button>
+            <center class=" mb-4">
+                <button class="btn btn-warning  mt-4 w-25"><a href="{{ f.get_absolute_url }}">Read more</a></button>
             </center>
             </div>
             {% endfor %}
-                
+
                           
                 
         </div>
