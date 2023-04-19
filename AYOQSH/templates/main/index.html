@@ -11,47 +11,83 @@ AYOQSH
 {% block content %}
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">  
-                <div class="swiper-slide"><img class="w-50"   src="{% static 'img/ayoqsh.png' %}" alt=""></div>
-                <div class="swiper-slide"><img class="w-50"   src="{% static 'img/ayoqsh.png' %}" alt=""></div>
-                <div class="swiper-slide"><img class="w-50"   src="{% static 'img/ayoqsh.png' %}" alt=""></div>
-                <div class="swiper-slide"><img class="w-50"   src="{% static 'img/ayoqsh.png' %}" alt=""></div>
-                <div class="swiper-slide"><img class="w-50"   src="{% static 'img/ayoqsh.png' %}" alt=""></div>
-                <div class="swiper-slide"><img class="w-50"   src="{% static 'img/ayoqsh.png' %}" alt=""></div>
+                <div class="swiper-slide"><a href="#"><img class="w-75"    src="{% static 'img/ayoqsh.png' %}" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img class="w-75"    src="{% static 'img/ayoqsh.png' %}" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img class="w-75"    src="{% static 'img/ayoqsh.png' %}" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img class="w-75"    src="{% static 'img/ayoqsh.png' %}" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img class="w-75"    src="{% static 'img/ayoqsh.png' %}" alt=""></a></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-    <div class="container">
+    <div class="">
 
-        <div class="d-lg-flex d-block">
+        <div class="container align-content-center justify-content-center">
             
         
             
-            <div class="card_flex">
-                <div class="card-hover">
+        <center>
+            <div class="card-flex">
+                <div class="card-hover delete1">
                     <div class="card-hover__content">
                       <h3 class="card-hover__title">
                         <span></span> AYOQSH 
                       </h3>
                       <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
-                      <a href="#" class="card-hover__link">
-                        <span>Learn How</span>
+                      <a href="{% url 'main:page' %}" class="card-hover__link">
+                        <span>Read More</span>
                         <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>        
                       </a>
                     </div>
                     <div class="card-hover__extra">
-                      <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+                      <h4>Buy <span>now</span> and get <span>40%</span> discount!</h4>
+                    </div>
+                    <img src="{% static 'img/fuel.jpg' %}" alt="">
+                  </div>
+                  
+
+                  <div class="card-hover">
+                    <div class="card-hover__content">
+                      <h3 class="card-hover__title">
+                        <span></span> AYOQSH 
+                      </h3>
+                      <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+                      <a href="{% url 'main:page' %}" class="card-hover__link">
+                        <span>Read More</span>
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>        
+                      </a>
+                    </div>
+                    <div class="card-hover__extra">
+                      <h4>Buy <span>now</span> and get <span>40%</span> discount!</h4>
                     </div>
                     <img src="{% static 'img/fuel.jpg' %}" alt="">
                   </div>
 
-                  <div class="fuel_salary">
-                    <a href="#" class=" text-bg-light"><p class="  fw-bold"><i class="fa-solid fa-gas-pump"></i> :  AI-80 <i class="fa-sharp fa-solid fa-money-check-dollar ms-5"> : 10-000 SO'M</i></p></a>
+                  <div class="card-hover">
+                    <div class="card-hover__content">
+                      <h3 class="card-hover__title">
+                        <span></span> AYOQSH 
+                      </h3>
+                      <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+                      <a href="{% url 'main:page' %}" class="card-hover__link">
+                        <span>Read More</span>
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>        
+                      </a>
+                    </div>
+                    <div class="card-hover__extra">
+                      <h4>Buy <span>now</span> and get <span>40%</span> discount!</h4>
+                    </div>
+                    <img src="{% static 'img/fuel.jpg' %}" alt="">
                   </div>
             </div>
+        </center>
 
             <!-- <div class="card m-2" >
                     <div class="rounded  fuel_card">
@@ -73,6 +109,7 @@ AYOQSH
            -->
             
            
+        <iframe data-aos="zoom-in" class="w-100 mt-5 " style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48426.049077491465!2d72.19862886542494!3d40.66012841025954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc8e7780f2771f%3A0x8b87e914ee597fb6!2z0JDRgdCw0LrQsCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1681023101427!5m2!1sru!2s"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         
         </div>
         
@@ -83,7 +120,6 @@ AYOQSH
        
 
 
-        <iframe data-aos="zoom-in" class="w-100 mt-5 " style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48426.049077491465!2d72.19862886542494!3d40.66012841025954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc8e7780f2771f%3A0x8b87e914ee597fb6!2z0JDRgdCw0LrQsCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1681023101427!5m2!1sru!2s"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <br><br>
 

@@ -230,22 +230,44 @@ h5 {
   transform: scale(1.2);
   transition: 0.35s 0.35s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
 }
-.card_flex{
+.card-hover{
+  margin: 10px;
+}
+.card-flex{
   display: flex;
 }
+@media screen and (max-width: 1250px) {
+  
+  .delete1{
+    display: none;
+  }
+  .card-flex{
+    margin-left: 10%;
+  }
+ }
+@media screen and (max-width: 768px) {
+  .card-hover{
+    margin: 0px;
+    margin-top: 15px;
+    width: 100%;
+  }
 
-.fuel_salary{
-  background-color: rgb(255, 208, 78);
-  display: none;
-}
+  .card-flex{
+    display: block;
+    margin-left: 0%;
+  }
+  .card-hover__text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .card-hover__extra{
+    font-size: 10px;
+  }
+ }
+ 
 
-.card_flex:hover {
-  width: 500px;
-}
-.card_flex:hover .fuel_salary{
-  display: block;
-}
 
+/* Loader */
 
   .ftco-animate i{
     font-size: 20px;
@@ -307,9 +329,10 @@ h5 {
     display: flex;
   }
   .fuel_card img{
-    width: 40%;
+    width: 30%;
+    height: auto;
   }
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 600px) {
   .fuel_card{
     display: block;
   }

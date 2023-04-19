@@ -13,20 +13,13 @@ def register(request):
     return render(request, 'main/register.html')
 
 
+def page(request):
+    return render(request, 'main/detail.html')
+
+
+
 class HomeView(View):
     def get(self, request):
         fuels = Fuel.objects.all()
         return render(request, "main/index.html", {"fuel_list": fuels})
 
-# class FuelView(DetailView):
-#     model = Fuel
-#     template_name = 'detail.html'
-#     slug_url_kwarg = 'slug'
-#     context_object_name = 'detail'
-    
-
-class FuelView(View):
-    def get(self, request, slug):   
-        fuel = Fuel.objects.get(url=slug)
-        return render(request, "main/detail.html", {"detail": fuel})
-    
