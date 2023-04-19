@@ -5,16 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
     <link rel="stylesheet" href="{% static 'css/bbb.css' %}"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>{% block tittle %}{% endblock %}</title>
+  
     <style>
-      body{
-        background-color: rgb(182, 179, 179);
+      html,
+      body {
+        position: relative;
+        height: 100%;
       }
+  
+      body {
+        background-color: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+    
+      
+      .swiper {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 95%;
+        height: 50%;
+      }
+      .swiper-slide {
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+    
     </style>
 </head>
 <body>
@@ -54,31 +88,11 @@
         </div>
       </nav>
 
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner p-5 ">
-         <center>
-          <div class="carousel-item active">
-            <img src="{% static 'img/ayoqsh.png' %}" class="d-block w-50 h-50" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{% static 'img/ayoqsh.png' %}" class="d-block w-50 h-50" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{% static 'img/ayoqsh.png' %}" class="d-block w-50 h-50" alt="...">
-          </div>
-         </center>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon   " aria-hidden="true"></span>
-          <span class="visually-hidden " >Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+  
 
-      {% block content %}
+    
+    
+    {% block content %}
       {% endblock %}
 
     
@@ -99,7 +113,7 @@
                 <div class="row">
                   <div class="col-md-4 mb-md-0 mb-4">
                     <h2 class="footer-heading" id="about">About us</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, unde?.</p>
                     <ul class="ftco-footer-social p-0">
                       <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa-brands fa-facebook"></i></a></li>
                       <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa-brands fa-twitter"></i></a></li>
@@ -113,7 +127,7 @@
                           <div class="col-md-4 mb-md-0 mb-4">
                             <h2 class="footer-heading">Discover</h2>
                             <ul class="list-unstyled">
-                              <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                              <li><a href="#" class="py-1 d-block">Buy </a></li>
                               <li><a href="#" class="py-1 d-block">Merchant</a></li>
                               <li><a href="#" class="py-1 d-block">Giving back</a></li>
                               <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
@@ -198,10 +212,25 @@
         </div>
 
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      
+
       <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
       <script src="{% static 'js.js' %}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
       <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        }); 
         AOS.init();
         let loader = document.querySelector('.loader-wrapper')
 
